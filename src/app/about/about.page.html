@@ -1,0 +1,28 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>NUEVA VISTA - ABOUT - </ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-buttons slot="start" >
+  <ion-back-button
+  defaultHref="/" text="Regresar"
+  color="primary"
+  mode="ios"></ion-back-button>
+  </ion-buttons>
+<ion-content >
+ 
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">about</ion-title>
+    </ion-toolbar>
+    <div style="color: brown;">
+      CONTENIDO
+      <li style="list-style: none;" *ngFor="let item of list">
+        <div style="display: flex; justify-content: center; align-items: center;">
+          <p style="margin-right: 9px;">{{item.id}}</p>
+          <p> {{item.descripcion}} </p>
+        </div>
+      </li>
+    </div>
+  </ion-header>
+</ion-content>
